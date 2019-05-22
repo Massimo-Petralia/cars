@@ -1,11 +1,11 @@
 <div style="border: 1px solid black" class="gridContainer">
 <header style="border: 1px solid black" class="header">{{title}}</header>
 <nav style="border: 1px solid black" class="listContainer">
-<app-cars-list [cars]="cars"></app-cars-list>
+<app-cars-list  [cars]="cars" (carSelectedEvent)="selectCar($event)"></app-cars-list>
 </nav>
-<div style="border: 1px solid black" class="fromContainer">
-<app-car-form></app-car-form>
-</div>
+<form nz-form style="border: 1px solid black" class="fromContainer">
+<app-car-form [car]="carSelected"></app-car-form>
+</form>
 <section style="border: 1px solid black" class="carContainer">car box</section>
 <footer style="border: 1px solid black" class="footer">footer</footer>
 </div>

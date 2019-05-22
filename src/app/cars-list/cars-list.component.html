@@ -1,5 +1,5 @@
 <button>new car</button>
 
 <nz-list>
-  <nz-list-item *ngFor="let car of cars" >{{car.brand}}, Model: {{car.model}}</nz-list-item>
+  <nz-list-item *ngFor="let car of cars" (click)="selectedCar(car)" >{{car.brand}}, Model: {{car.model}}</nz-list-item>
 </nz-list>

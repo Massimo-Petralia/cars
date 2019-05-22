@@ -1,3 +1,8 @@
-<p>
-  car-form works!
-</p>
+
+<div *ngIf="car">
+    <input nz-input [(ngModel)]="car.brand" type="text" placeholder="insert brand...">
+    <input nz-input [(ngModel)]="car.model" type="text" placeholder="insert model...">
+    <input nz-input [(ngModel)]="car.color" type="text" placeholder="insert color...">
+    <button>Save</button>
+</div>
+
