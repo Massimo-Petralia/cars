@@ -8,7 +8,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class AppComponent implements OnInit {
   title = 'Cars';
-
+  dbUrl = 'http://localhost:3000/cars'
   constructor(private http: HttpClient) {
 
   }
@@ -17,5 +17,9 @@ export class AppComponent implements OnInit {
 
   }
 
+
+  getCars() {
+    this.http.get(this.dbUrl).subscribe()
+  }
 
 }
