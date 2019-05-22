@@ -10,13 +10,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { registerLocaleData } from '@angular/common';
 import it from '@angular/common/locales/it';
 import { CarsListComponent } from './cars-list/cars-list.component';
+import { CarFormComponent } from './car-form/car-form.component';
 
 registerLocaleData(it);
 
 @NgModule({
   declarations: [
     AppComponent,
-    CarsListComponent
+    CarsListComponent,
+    CarFormComponent
   ],
   imports: [
     BrowserModule,
