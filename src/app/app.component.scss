@@ -1,0 +1,27 @@
+.gridContainer{
+    display: grid;
+    grid-template-areas:    'header header'
+                            'section1 section2'
+                            'section3 section3'
+                            'footer footer'
+}
+
+.header{
+    grid-area: header;
+}
+.listContainer{
+    grid-area: section1;
+}
+
+.formContainer{
+    grid-area: section2;
+}
+
+.carContainer{
+    grid-area: section3;
+    text-align: center;
+}
+
+.footer{
+    grid-area: footer;
+}
